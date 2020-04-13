@@ -38,7 +38,7 @@ object MyModule {
 
   def fib(n: Int): Int = {
     @annotation.tailrec
-    def go(n: Int, prev: Int, cur: Int) {
+    def go(n: Int, prev: Int, cur: Int): Int = {
         if (n == 1) {
             prev
         } else {
